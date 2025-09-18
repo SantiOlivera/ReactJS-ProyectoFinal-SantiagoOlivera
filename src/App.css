@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #FFD700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin: 3rem;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.widget {
+  width: 3rem;
+  height: 3rem;
+  text-align: end;
+}
+
+.contenedorCarrito {
+  width: 160px;
+  text-align: end;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
