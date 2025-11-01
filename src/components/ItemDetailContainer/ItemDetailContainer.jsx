@@ -27,7 +27,7 @@ export const ItemDetailContainer = () => {
             }, 2000)
     }, [id])
 
-    if (loading) return <p>Cargando...</p>
+    if (loading) return "Cargando..."
 
     return (
         <div>
