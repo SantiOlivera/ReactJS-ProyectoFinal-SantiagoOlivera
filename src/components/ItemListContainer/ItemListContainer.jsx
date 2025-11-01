@@ -39,10 +39,9 @@ export const ItemListContainer = () => {
         }, 2000)
 
         return () => clearTimeout(timeout)
-        
     }, [id])
 
-    if (loading) return "Cargando..."
+    if (loading) return <p>Cargando...</p>
 
     return (
         <div>
