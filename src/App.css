@@ -31,7 +31,7 @@ a {
   text-align: end;
 }
 
-.contenedorCarrito {
+.imgCarrito {
   width: 160px;
   text-align: end;
 }
@@ -43,9 +43,15 @@ h1 {
 
 
 .contenedorProductos {
+  margin: 5rem 20rem;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
   text-align: center;
-  margin: 5rem;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 img {
   height: 20rem;
@@ -62,11 +68,12 @@ p {
   color: white;
 }
 
-button {
+.btnVerMas {
   height: 40px;
   width: 80px;
   background-color: #00bcd4;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 mark {
@@ -77,4 +84,110 @@ mark {
 .precios {
   font-size: 20px;
   color: rgb(82, 206, 92);
+}
+
+span {
+  margin: 30px;
+  font-size: 25px;
+}
+
+.contenedorProductosDetalles {
+  margin: 5rem 12rem;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btnMasMenos {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #00bcd4;
+  cursor: pointer;
+}
+
+.btnAgreCarr {
+  margin-left: 30px;
+  height: 40px;
+  background-color: #00bcd4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contenedorBotonesMM {
+  margin: 30px;
+}
+
+.contenedorCarrito {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.contenedorItemsCarrito {
+  margin: 2rem 25rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.contenedorContacto {
+  margin-top: 50px;
+}
+
+.btnEliminar {
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgb(255, 0, 0);
+  border: 2px solid #FFD700;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contenedorInputs {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 10px 10rem;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  height: 20px;
+}
+
+.btnComprar {
+  margin-top: 30px;
+  height: 33px;
+  border-radius: 18px;
+  background-color: #FFD700;
+  cursor: pointer;
+}
+
+.btnVaciarCarr {
+  margin-top: 30px;
+  height: 33px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: rgb(255, 0, 0);
+  border: 2px solid #FFD700;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 25px;
+  text-decoration: underline;
 }

@@ -1,12 +1,14 @@
 import { NavLink } from 'react-router-dom'
 
-import logo from '../assets/logo.png'
-import { CartWidget } from './CartWidget'
+import logo from '../../assets/logo.png'
+import { CartWidget } from '../CartWidget/CartWidget'
 
 export const NavBar = () => (
     <>
         <nav>
-            <img src={logo} alt="logo de la tienda" className='logo' />
+            <NavLink to="/">
+                <img src={logo} alt="logo de la tienda" className='logo' />
+            </NavLink>
             <NavLink to="/">home</NavLink>
             <NavLink to="/category/teclados">teclados</NavLink>
             <NavLink to="/category/mouses">mouses</NavLink>
