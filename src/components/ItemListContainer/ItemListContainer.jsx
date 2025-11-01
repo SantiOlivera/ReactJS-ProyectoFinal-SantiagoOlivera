@@ -42,7 +42,7 @@ export const ItemListContainer = () => {
         
     }, [id])
 
-    if (loading) return "cargando..."
+    if (loading) return <p>Cargando...</p>
 
     return (
         <div>
