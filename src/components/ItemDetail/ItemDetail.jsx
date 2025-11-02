@@ -13,10 +13,8 @@ export const ItemDetail = ({ product }) => {
         if (savedStock !== null && savedStock > product.stock) {
             setStock(product.stock)
             localStorage.setItem(`stock_${product.id}`, JSON.stringify(product.stock))
-
         } else if (savedStock !== null) {
             setStock(savedStock)
-            
         } else {
             setStock(product.stock)
         }
