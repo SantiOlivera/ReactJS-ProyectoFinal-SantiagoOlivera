@@ -7,13 +7,21 @@ export const ItemDetail = ({ product }) => {
     const [ counter, setCounter ] = useState(1)
     const [ stock, setStock ] = useState(product.stock)
 
-
     useEffect(() => {
         const savedStock = JSON.parse(localStorage.getItem(`stock_${product.id}`))
-        if (savedStock !== null) {
+
+        if (savedStock !== null && savedStock > product.stock) {
+            setStock(product.stock)
+            localStorage.setItem(`stock_${product.id}`, JSON.stringify(product.stock))
+
+        } else if (savedStock !== null) {
             setStock(savedStock)
+            
+        } else {
+            setStock(product.stock)
         }
-    }, [product.id])
+
+    }, [product.id, product.stock])
 
 
     const onAdd = (quantity) => {
